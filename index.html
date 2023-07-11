@@ -219,9 +219,9 @@
                   <input class="input__text" type="text" id="reg-name">
               </div>
 
-              <div class="modal-reg__row">
+              <div class="modal-reg__row phone">
                   <label class="reg-label" for="reg-number">Телефон *</label>
-                  <input class="input__text reg-input__number" type="text" value="+7 (___) ___-__-__" id="reg-number">
+                  <input class="input__text reg-input__number" type="text" placeholder="+7 (___) ___-__-__" id="reg-number" data-phone-pattern>
               </div>
 
               <div class="modal-reg__row">
@@ -279,8 +279,8 @@
               </div>
 
               <div class="modal-reg__row modal-reg-termofuse">
-                  <input class="checbox-termofuse" type="checkbox" id="reg-termofuse">
-                  <p class="modal__desc reg-desc">Соглашаюсь с <a class="modal__link reg-link">Условиями</a> обработки персональных данных</p>
+                  <input class="checkbox checbox-termofuse" type="checkbox" id="policy" checked>
+                  <label for="policy" class="modal__desc reg-desc">Соглашаюсь с условиями обработки персональных данных</label>
               </div>
 
               <div class="form__complete-block reg-complete-block">
@@ -313,8 +313,8 @@
               <p class="modal__desc modal-acc__remind-pass">Забыли пароль? Не беда! <a class="modal__link remind">Напомнить</a></p> 
 
               <div class="modal-reg__row modal-acc__remember">
-                  <input class="checbox-termofuse" type="checkbox" id="reg-termofuse">
-                  <p class="modal__desc reg-desc">Запомнить меня на этом сайте</p>
+                  <input class="checkbox checbox-termofuse" type="checkbox" id="remind-login">
+                  <label for="remind-login" class="modal__desc reg-desc">Запомнить меня на этом сайте</label>
               </div>
               
               <div class="form__complete-block acc__complete-block">
@@ -349,7 +349,87 @@
     <div class="modal-wrapper" id="modal-constructor">
       <div class="modal">
         <img class="modal__close-button" src="images/modalClose.svg" alt="">
-        
+        <div class="modal__constructor">
+          <h3 class="modal__title title-reg">Собери свою пиццу!</h3>
+          <div class="constructor__action">
+            <div class="constructor-text">
+              <div>Выбери 2 пиццы</div>
+              <p>Размер 35 см</p>
+              <img class="constructor-animation" src="images/greenArrow.svg" alt="">
+            </div>
+            <div class="constructor-flex">
+              <div class="pizza-constructor">
+                <img src="images/leftCnstr.png" alt="">
+                <img src="images/rightCnstr.png" alt="">
+              </div>
+              <div class="constructor-buttons">
+                <button class="card-pizza_cart-btn item-card__btn active">
+                  <div class="cart-btn__inc minus">&ndash;</div>
+                  790 &#8381;
+                  <div class="cart-btn__inc plus">+</div>
+                  <div class="cart-btn__multy">x<span>1</span></div>
+                </button>
+                <div class="row">
+                  <p>тесто:</p>
+                  <button class="card-pizza__focus_btn">пышное</button>
+                  <button class="card-pizza__select_btn">тонкое</button>
+                </div>
+                <button class="sumbit-btn disabled">В КОРЗИНУ</button>
+              </div>
+            </div>
+          </div>
+          <div class="constructor__list">
+            <div class="constructor__card">
+              <img class="constructor__card-img" src="images/pizzaCard.png" alt="">
+              <div class="constructor__card-field">
+                <div class="card-field__name">Филадельфия</div>
+                <div class="card-field__price">790 &#8381;</div>
+              </div>
+            </div>
+            <div class="constructor__card">
+              <img class="constructor__card-img" src="images/pizzaCard.png" alt="">
+              <div class="constructor__card-field">
+                <div class="card-field__name">Филадельфия</div>
+                <div class="card-field__price">790 &#8381;</div>
+              </div>
+            </div>
+            <div class="constructor__card">
+              <img class="constructor__card-img" src="images/pizzaCard.png" alt="">
+              <div class="constructor__card-field">
+                <div class="card-field__name">Филадельфия</div>
+                <div class="card-field__price">790 &#8381;</div>
+              </div>
+            </div>
+            <div class="constructor__card">
+              <img class="constructor__card-img" src="images/pizzaCard.png" alt="">
+              <div class="constructor__card-field">
+                <div class="card-field__name">Филадельфия</div>
+                <div class="card-field__price">790 &#8381;</div>
+              </div>
+            </div>
+            <div class="constructor__card active">
+              <img class="constructor__card-img" src="images/pizzaCard.png" alt="">
+              <div class="constructor__card-field">
+                <div class="card-field__name">Филадельфия</div>
+                <div class="card-field__price">790 &#8381;</div>
+              </div>
+            </div>
+            <div class="constructor__card">
+              <img class="constructor__card-img" src="images/pizzaCard.png" alt="">
+              <div class="constructor__card-field">
+                <div class="card-field__name">Филадельфия</div>
+                <div class="card-field__price">790 &#8381;</div>
+              </div>
+            </div>
+            <div class="constructor__card">
+              <img class="constructor__card-img" src="images/pizzaCard.png" alt="">
+              <div class="constructor__card-field">
+                <div class="card-field__name">Филадельфия</div>
+                <div class="card-field__price">790 &#8381;</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="modal-wrapper" id="modal-ingredients">
